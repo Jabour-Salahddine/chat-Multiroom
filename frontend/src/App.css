@@ -1,0 +1,164 @@
+.App {
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.titre{
+  font-size:50px;
+  color: #17db10;
+
+}
+
+.titre span{
+  color: red;
+}
+
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #b8e6cb;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#chatForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#chatForm div {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-bottom: teal;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: #00ffdd;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b35f00;
+}
+
+/*********************************************/
+
+.chat-window {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #5da74f;
+  color: white;
+  font-size:600px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.body {
+  min-height: 300px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  overflow-y: auto;
+}
+
+.footer {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: none;
+  background-color: #5e8b53;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #17db10;
+}
+/****************************************************/
+
+.message {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: flex-start; /* Alignement par défaut à gauche */
+}
+
+#me {
+  justify-content: flex-end;
+}
+
+#me .centenu, #other .centenu {
+  max-width: 60%; /* Ajustez selon le besoin */
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+  color: #fff;
+}
+
+#me .centenu {
+  background-color: #007bff; /* Couleur de fond pour 'me' */
+}
+
+#other .centenu {
+  background-color: #444; /* Couleur de fond pour 'other' */
+}
+
+.info {
+  display: flex;
+  justify-content:space-around;
+  font-size: 12px;
+}
+
+#me .info, #other .info {
+  width: 40%; /* Assurez que cela correspond à la max-width de .centenu */
+  margin: 5px;
+}
+
+#me .info {
+  justify-content:left;
+}
+
+.message p {
+  margin: 0; /* Supprime les marges par défaut des paragraphes */
+}
+
+/* Style supplémentaire pour aligner l'heure et l'auteur avec le message */
+#me .info, #other .info {
+  align-items: center;
+}
+
+#me .info p, #other .info p {
+  margin: 0 5px;
+}
